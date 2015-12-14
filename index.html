@@ -4,21 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Video chat using socket.io" content="">
-    <meta name="author" content="Hiren Kavad">
-  
-     <!-- <script src="//api.turnservers.com/api.js?key=Here You API KEY"></script> -->
+    <meta name="WebRTC video chat with Node and socket.io" content="">
 
-    <!-- Obtain FREE TURN SERVER AND API KEY From Turnservers.com -->
-
-    <title>Video Chat By Hiren Kavad</title>
+    <title>Video Chat with Node and socket.io (WebRTC)</title>
 
     <!-- Bootstrap core CSS -->
      <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.css" rel="stylesheet">
      <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
       <link href="css/custom.css" rel="stylesheet">
 
-  
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -57,28 +52,28 @@
     </div>
 <div class="jumbotron">
  <div class="row ">
-         
-          
+
+
           <div class="col-md-8" >
             <div class="row">
-              <img src="images/remote.png" id="remoteimg" class="img-responsive"/>  
+              <img src="/images/remote.jpg" id="remoteimg" class="img-responsive"/>
               <video id='remoteVideo' autoplay width="100%" class="remote"></video>
             </div>
           </div>
-          <div class="col-md-4 local" > 
-            <div class="row">           
-               <img src="images/local.png" id="localimg" class="img-responsive"/>           
+          <div class="col-md-4 local" >
+            <div class="row">
+               <img src="/images/local.jpeg" id="localimg" class="img-responsive"/>
                <video id='localVideo' autoplay muted width="100%" ></video>
             </div>
             <div class="row">
-             
+
               <div id="chat" class="txtarea fullsz"></div>
-              <input type="text" id="msg" placeholder="Press enter to send message" class="fullsz form-control"/>          
+              <input type="text" id="msg" placeholder="Press enter to send message" class="fullsz form-control"/>
             </div>
           </div>
         </div>
 
-      <footer class="footer">        
+      <footer class="footer">
         <i class="fa fa-github"></i><a href="https://github.com/Hironate/PeerChat" target="_blank"> Fork Me on Github</a>
       </footer>
 </div>
