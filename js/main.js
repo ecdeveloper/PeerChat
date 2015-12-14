@@ -34,7 +34,7 @@ var pc_config = {
 
 // pc_constraints is not currently used, but the below would allow us to enforce
 // DTLS keying for SRTP rather than SDES ... which is becoming the default soon
-// anyway. 
+// anyway.
 var pc_constraints = {
   'optional': [{
     'DtlsSrtpKeyAgreement': true
@@ -95,9 +95,6 @@ function createConnection() {
   navigator.getUserMedia(constraints, handleUserMedia, handleUserMediaError);
   if(navigator.mozGetUserMedia) {
     isFirefox = true;
-  }
-  if (location.hostname != "localhost") {
-    requestTurn('https://computeengineondemand.appspot.com/turn?username=41784574&key=4080218913');
   }
 }
 
@@ -313,7 +310,7 @@ function doCall() {
 
 function doAnswer() {
   console.log('Sending answer to peer.');
-  if(isFirefox) {  
+  if(isFirefox) {
     pc.createAnswer(setLocalAndSendMessage, handleCreateAnswerError, sdpConstraints);
   }
   else {
